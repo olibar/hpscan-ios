@@ -111,4 +111,4 @@ terminal, handy to validate a new printer model.
 
 ## License
 
-MIT, see LICENSE.
+MIT, see LICENSE. Privacy policy: [PRIVACY.md](PRIVACY.md).
