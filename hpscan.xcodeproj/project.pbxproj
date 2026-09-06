@@ -11,6 +11,7 @@
 		171EF05643F486CE52CEB5C0 /* HPScanKit in Frameworks */ = {isa = PBXBuildFile; productRef = C149D9FAA3282FCE2BBCE886 /* HPScanKit */; };
 		2F0B4B4F13C9B3C3B67F745A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B533A7D2DDE3176CF4621F8A /* Assets.xcassets */; };
 		314C0BBAEEF99C2A3EA7B3EC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D2900127575E1CEDF1AD77 /* Persistence.swift */; };
+		3686E413C23A261882C686A2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 909A19117219F23DF899DAA0 /* PrivacyInfo.xcprivacy */; };
 		3F00FA066416497F4034D3BF /* PrintersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A472A2B56AB2B01131B4E /* PrintersView.swift */; };
 		4582B04E34538B00C62723AD /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33277E92E46099E69E7B3B3B /* RootView.swift */; };
 		4640404A5FDF2BA46964E31D /* OutputLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E08B51E133C13744A5821 /* OutputLocation.swift */; };
@@ -25,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02FEE60702720D8F23699C9F /* hpscan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hpscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FEE60702720D8F23699C9F /* hpscan.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = hpscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2091E195F519D5E17700DB87 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		2A89E0100D2AA684B15BB760 /* HPScanKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HPScanKit; path = Packages/HPScanKit; sourceTree = SOURCE_ROOT; };
 		33277E92E46099E69E7B3B3B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		4D9E08B51E133C13744A5821 /* OutputLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputLocation.swift; sourceTree = "<group>"; };
 		768419EFBF0D45764FE20CAE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		84320BFD694E9EB7BEB5A106 /* OutputFolderPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFolderPicker.swift; sourceTree = "<group>"; };
+		909A19117219F23DF899DAA0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		93A18175A812F8AC0A63979E /* ListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningView.swift; sourceTree = "<group>"; };
 		94165D40F321616292614A8F /* hpscanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hpscanApp.swift; sourceTree = "<group>"; };
 		958A472A2B56AB2B01131B4E /* PrintersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintersView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				4D9E08B51E133C13744A5821 /* OutputLocation.swift */,
 				46D2900127575E1CEDF1AD77 /* Persistence.swift */,
 				EB91BDBAF057569BCFFD64CB /* PhotosSaver.swift */,
+				909A19117219F23DF899DAA0 /* PrivacyInfo.xcprivacy */,
 				DAC76FC01D07FBC3F7A7EF2D /* Views */,
 			);
 			path = hpscan;
@@ -144,6 +147,7 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					58B3C2B6F8B802756DA42596 = {
+						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0B4B4F13C9B3C3B67F745A /* Assets.xcassets in Resources */,
+				3686E413C23A261882C686A2 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,14 +217,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2E9B65SZ35;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = hpscan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinimed.hpscan;
 				PRODUCT_NAME = hpscan;
 				SDKROOT = iphoneos;
@@ -302,14 +306,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2E9B65SZ35;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = hpscan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinimed.hpscan;
 				PRODUCT_NAME = hpscan;
 				SDKROOT = iphoneos;
