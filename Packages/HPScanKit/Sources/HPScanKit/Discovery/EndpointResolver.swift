@@ -66,15 +66,19 @@ public enum EndpointResolver {
         }
     }
 
+    /// Renders a host without the interface scope ("%en0") that Network
+    /// appends to link-scoped addresses; URLs do not accept it.
     static func render(_ host: NWEndpoint.Host) -> String {
         switch host {
-        case let .ipv4(addr): return "\(addr)"
-        case let .ipv6(addr):
-            // Drop the interface scope ("%en0") that the description appends.
-            let s = "\(addr)"
-            return s.split(separator: "%").first.map(String.init) ?? s
-        case let .name(name, _): return name
-        @unknown default: return "\(host)"
+        case let .ipv4(addr): return stripScope("\(addr)")
+        case let .ipv6(addr): return stripScope("\(addr)")
+        case let .name(name, _): return stripScope(name)
+        @unknown default: return stripScope("\(host)")
         }
+    }
+
+    static func stripScope(_ s: String) -> String {
+        guard let pct = s.firstIndex(of: "%") else { return s }
+        return String(s[..<pct])
     }
 }

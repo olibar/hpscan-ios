@@ -79,6 +79,13 @@ struct EventTrackerTests {
 }
 
 struct DiscoveryFilterTests {
+    @Test func scopeIsStripped() {
+        #expect(EndpointResolver.stripScope("192.168.68.114%en0") == "192.168.68.114")
+        #expect(EndpointResolver.stripScope("fe80::1%en0") == "fe80::1")
+        #expect(EndpointResolver.stripScope("HP058DA0.local") == "HP058DA0.local")
+        #expect(LEDMClient(host: "192.168.68.114%en0", port: 8080).baseURL.absoluteString == "http://192.168.68.114:8080")
+    }
+
     @Test func isHP() {
         #expect(DiscoveredScanner.isHP(name: "Photosmart 6510 series [058DA0]", model: nil, mfg: "hp"))
         #expect(DiscoveredScanner.isHP(name: "HP OfficeJet Pro 9010", model: nil, mfg: nil))
