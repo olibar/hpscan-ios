@@ -1,6 +1,6 @@
-# Scan to Phone for HP printers
+# Scan to Me for HP printers
 
-Scan2Phone makes an iPhone or iPad show up in the **Scan to Computer** menu of HP
+Scan to Me makes an iPhone or iPad show up in the **Scan to Computer** menu of HP
 Photosmart / OfficeJet / ENVY all-in-ones. Open the app, press Scan on the
 printer, pick your phone, and the pages arrive over WiFi as a PDF or JPEG in
 the folder you chose (Files, iCloud Drive, any file provider) and optionally
@@ -98,7 +98,7 @@ terminal, handy to validate a new printer model.
 * Printer says "no computer found": start listening in the app **before**
   opening the menu on the printer, and check each printer shows "Ready".
 * Nothing found when adding a printer: Settings > Privacy & Security > Local
-  Network must list Scan2Phone as allowed. Or add the printer by address.
+  Network must list Scan to Me as allowed. Or add the printer by address.
 * The Activity screen (magnifier icon on the Listen tab) shows what the
   session did; the Copy button puts it on the clipboard for bug reports.
 

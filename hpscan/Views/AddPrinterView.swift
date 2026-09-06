@@ -41,7 +41,7 @@ struct AddPrinterView: View {
                 } header: {
                     Text("Found on the network")
                 } footer: {
-                    Text("If nothing shows up, allow Local Network access for Scan2Phone in Settings > Privacy & Security.")
+                    Text("If nothing shows up, allow Local Network access for Scan to Me in Settings > Privacy & Security.")
                 }
                 Section("Manual") {
                     TextField("Host (HPxxxxxx.local or IP)", text: $manualHost)

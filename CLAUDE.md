@@ -1,4 +1,4 @@
-# hpscan for iOS (Scan2Phone)
+# hpscan for iOS (Scan to Me)
 
 iPhone/iPad app that registers the device as a "Scan to Computer" destination
 on HP inkjet all-in-ones (LEDM REST interface, HTTP port 8080/80), receives
