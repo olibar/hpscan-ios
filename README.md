@@ -1,4 +1,4 @@
-# hpscan for iOS
+# HP Scan for iOS
 
 Makes an iPhone or iPad show up in the **Scan to Computer** menu of HP
 Photosmart / OfficeJet / ENVY all-in-ones. Open the app, press Scan on the
@@ -98,7 +98,7 @@ terminal, handy to validate a new printer model.
 * Printer says "no computer found": start listening in the app **before**
   opening the menu on the printer, and check each printer shows "Ready".
 * Nothing found when adding a printer: Settings > Privacy & Security > Local
-  Network must list hpscan as allowed. Or add the printer by address.
+  Network must list HP Scan as allowed. Or add the printer by address.
 * The Activity screen (magnifier icon on the Listen tab) shows what the
   session did; the Copy button puts it on the clipboard for bug reports.
 
