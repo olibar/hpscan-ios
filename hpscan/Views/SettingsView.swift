@@ -53,11 +53,11 @@ struct SettingsView: View {
                 } header: {
                     Text("Save to")
                 } footer: {
-                    Text("The app folder is visible in Files under On My iPhone > HP Scan. Chosen folders can live in iCloud Drive or any file provider.")
+                    Text("The app folder is visible in Files under On My iPhone > Scan2Phone. Chosen folders can live in iCloud Drive or any file provider.")
                 }
                 Section("About") {
                     LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-")
-                    Text("HP Scan appears on the printer only while the app is open and listening. iOS suspends network access in the background.")
+                    Text("Scan2Phone appears on the printer only while the app is open and listening. iOS suspends network access in the background.")
                         .font(.footnote).foregroundStyle(.secondary)
                 }
             }

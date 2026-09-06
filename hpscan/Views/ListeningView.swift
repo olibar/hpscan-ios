@@ -14,7 +14,7 @@ struct ListeningView: View {
                 if !model.printers.isEmpty { printersSection }
                 recentSection
             }
-            .navigationTitle("HP Scan")
+            .navigationTitle("Scan2Phone")
             .toolbar {
                 NavigationLink { LogView() } label: { Label("Log", systemImage: "doc.text.magnifyingglass") }
             }
@@ -41,8 +41,8 @@ struct ListeningView: View {
             }
         } footer: {
             Text(model.isListening
-                 ? "The screen stays on while listening. Leave HP Scan open, then on the printer choose Scan > Computer > \"\(model.preferences.destinationName)\"."
-                 : "HP Scan only appears on the printer while this app is open and listening.")
+                 ? "The screen stays on while listening. Leave Scan2Phone open, then on the printer choose Scan > Computer > \"\(model.preferences.destinationName)\"."
+                 : "Scan2Phone only appears on the printer while this app is open and listening.")
         }
     }
 

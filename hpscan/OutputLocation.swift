@@ -20,7 +20,7 @@ enum OutputLocation: Codable, Equatable, Sendable {
 
     var displayName: String {
         switch self {
-        case .documents: return "On My iPhone / HP Scan"
+        case .documents: return "On My iPhone / Scan2Phone"
         case let .bookmark(_, name): return name
         }
     }
