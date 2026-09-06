@@ -20,7 +20,7 @@ struct OutputFolderPicker: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator(onPick: onPick) }
 
     final class Coordinator: NSObject, UIDocumentPickerDelegate {
-        private static let log = Logger(subsystem: "app.olibar.hpscan", category: "picker")
+        private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "picker")
         let onPick: (OutputLocation) -> Void
 
         init(onPick: @escaping (OutputLocation) -> Void) { self.onPick = onPick }

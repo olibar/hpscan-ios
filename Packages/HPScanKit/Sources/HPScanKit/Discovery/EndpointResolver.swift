@@ -29,7 +29,7 @@ public enum EndpointResolver {
             }
             continuation.onTermination = { _ in connection.cancel() }
         }
-        connection.start(queue: DispatchQueue(label: "app.olibar.hpscan.resolver"))
+        connection.start(queue: DispatchQueue(label: "com.sinimed.hpscan.resolver"))
         return try await withThrowingTaskGroup(of: Resolved.self) { group in
             group.addTask {
                 for await state in states {

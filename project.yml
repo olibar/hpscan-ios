@@ -3,7 +3,7 @@
 # not in Xcode.
 name: hpscan
 options:
-  bundleIdPrefix: app.olibar
+  bundleIdPrefix: com.sinimed
   deploymentTarget:
     iOS: "17.0"
   createIntermediateGroups: true
@@ -30,7 +30,7 @@ targets:
         product: HPScanKit
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.olibar.hpscan
+        PRODUCT_BUNDLE_IDENTIFIER: com.sinimed.hpscan
         PRODUCT_NAME: hpscan
         INFOPLIST_FILE: hpscan/Info.plist
         GENERATE_INFOPLIST_FILE: NO

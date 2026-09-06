@@ -33,7 +33,7 @@ public enum ScannerBrowser {
                 Log.discover.debug("discover: browse finished")
                 browser.cancel()
             }
-            browser.start(queue: DispatchQueue(label: "app.olibar.hpscan.browser"))
+            browser.start(queue: DispatchQueue(label: "com.sinimed.hpscan.browser"))
         }
     }
 

@@ -220,7 +220,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.olibar.hpscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinimed.hpscan;
 				PRODUCT_NAME = hpscan;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -309,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.olibar.hpscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinimed.hpscan;
 				PRODUCT_NAME = hpscan;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

@@ -8,7 +8,7 @@ import SwiftUI
 @MainActor
 @Observable
 final class AppModel {
-    private static let log = Logger(subsystem: "app.olibar.hpscan", category: "app")
+    private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "app")
 
     var printers: [PrinterRecord] = []
     var statuses: [UUID: SessionStatus] = [:]

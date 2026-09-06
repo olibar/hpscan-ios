@@ -5,7 +5,7 @@ import UIKit
 
 @MainActor
 final class BackgroundTaskGuard {
-    private static let log = Logger(subsystem: "app.olibar.hpscan", category: "background")
+    private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "background")
     private var identifier: UIBackgroundTaskIdentifier = .invalid
 
     /// Starts a background task; `onExpire` runs if iOS runs out of patience.

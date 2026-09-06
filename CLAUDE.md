@@ -34,7 +34,7 @@ xcodebuild -scheme hpscan -destination 'generic/platform=iOS Simulator' build
 
 - Swift 6 language mode, strict concurrency. Sessions are actors, UI state is
   `@MainActor @Observable`, cross-task data is `Sendable` value types.
-- Debug logging with `os.Logger(subsystem: "app.olibar.hpscan", category:)`
+- Debug logging with `os.Logger(subsystem: "com.sinimed.hpscan", category:)`
   at operation start/end and decision points, prefixed with the component
   (`ledm:`, `session:`, `discover:`, `sink:`). Never log full page payloads.
 - Every network call has an explicit per-request timeout

@@ -4,7 +4,7 @@ import os
 import SwiftUI
 
 struct AddPrinterView: View {
-    private static let log = Logger(subsystem: "app.olibar.hpscan", category: "add-printer")
+    private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "add-printer")
 
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss

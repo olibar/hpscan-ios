@@ -12,7 +12,7 @@ struct PersistedState: Codable, Sendable {
 }
 
 enum Persistence {
-    private static let log = Logger(subsystem: "app.olibar.hpscan", category: "persistence")
+    private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "persistence")
 
     static var fileURL: URL {
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!

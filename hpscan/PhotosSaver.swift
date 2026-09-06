@@ -4,7 +4,7 @@ import os
 import Photos
 
 enum PhotosSaver {
-    private static let log = Logger(subsystem: "app.olibar.hpscan", category: "photos")
+    private static let log = Logger(subsystem: "com.sinimed.hpscan", category: "photos")
 
     enum PhotosError: Error, LocalizedError {
         case notAuthorized

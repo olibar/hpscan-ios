@@ -3,7 +3,7 @@
 import os
 
 enum Log {
-    static let subsystem = "app.olibar.hpscan"
+    static let subsystem = "com.sinimed.hpscan"
     static let ledm = Logger(subsystem: subsystem, category: "ledm")
     static let session = Logger(subsystem: subsystem, category: "session")
     static let discover = Logger(subsystem: subsystem, category: "discover")
