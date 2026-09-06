@@ -104,10 +104,10 @@ terminal, handy to validate a new printer model.
 
 ## Tested devices
 
-| Printer | Protocol |
-|---|---|
-| HP Photosmart 6510 e-All-in-One (B211a) | LEDM WalkupScanToComp |
-| HP OfficeJet Pro 9010 series | LEDM WalkupScanToComp, flatbed + feeder |
+| Printer | Protocol | Status |
+|---|---|---|
+| HP Photosmart 6510 e-All-in-One (B211a) | LEDM WalkupScanToComp | Works: discovered via Bonjour, PDF scan to iPhone (2026-09) |
+| HP OfficeJet Pro 9010 series | LEDM WalkupScanToComp, flatbed + feeder | Same protocol as the desktop client; not yet tried from iOS |
 
 ## License
 
