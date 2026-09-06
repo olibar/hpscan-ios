@@ -32,7 +32,7 @@ struct PreferencesTests {
         #expect(letter.height == ScanSettings.letterHeight)
     }
 
-    @Test func validate() {
+    @Test func validate() throws {
         var p = ScanPreferences.defaults(deviceName: "x")
         try p.validate()
         p.resolution = 50

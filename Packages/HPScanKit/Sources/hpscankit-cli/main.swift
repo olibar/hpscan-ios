@@ -57,7 +57,7 @@ func serve(_ args: [String]) async {
         host = String(target[..<colon])
         port = p
     }
-    let name = option("--name", in: args) ?? Host.current().localizedName ?? "hpscankit"
+    let name = option("--name", in: args) ?? ProcessInfo.processInfo.hostName
     let out = URL(fileURLWithPath: option("--out", in: args) ?? "Scans", isDirectory: true)
     var prefs = ScanPreferences.defaults(deviceName: name)
     if let f = option("--format", in: args), let format = OutputFormat(rawValue: f) { prefs.format = format }

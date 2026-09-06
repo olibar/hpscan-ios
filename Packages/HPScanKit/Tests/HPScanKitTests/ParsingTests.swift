@@ -58,7 +58,7 @@ struct LEDMModelTests {
         #expect(!(idle.adfLoaded))
     }
 
-    @Test func registrationXML() {
+    @Test func registrationBody() {
         let comp = registrationXML(.walkupScanToComp, name: "A & B", hostname: "A & B")
         #expect(comp.contains("<dd3:Hostname>A &amp; B</dd3:Hostname>"))
         #expect(comp.contains("<dd:Name>A &amp; B</dd:Name>"))
@@ -142,7 +142,7 @@ struct ClientTests {
             _ = try await client.registerDestination(.walkupScanToComp, name: "Wrong", hostname: "Wrong")
             Issue.record("expected 400")
         } catch let e as LEDMError {
-            guard case .status(_, _, 400, _) = e else { return Issue.record("\(e)") }
+            guard case .status(_, _, 400, _) = e else { Issue.record("\(e)"); return }
         }
     }
 
