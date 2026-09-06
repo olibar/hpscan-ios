@@ -9,11 +9,13 @@ public struct LEDMClient: Sendable {
     let transport: any HTTPTransport
 
     public init(host: String, port: Int, transport: (any HTTPTransport)? = nil) {
+        // Addresses stored before the scope fix may still carry "%en0".
+        let host = EndpointResolver.stripScope(host.trimmingCharacters(in: .whitespaces))
         var comps = URLComponents()
         comps.scheme = "http"
         comps.host = host
         comps.port = port
-        let base = comps.url ?? URL(string: "http://\(host):\(port)")!
+        let base = comps.url ?? URL(string: "http://\(host):\(port)") ?? URL(string: "http://invalid-host:\(port)")!
         self.baseURL = base
         self.transport = transport ?? LEDMClient.makeSession()
         Log.ledm.debug("ledm: new client \(base.absoluteString)")

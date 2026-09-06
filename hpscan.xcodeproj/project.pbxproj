@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02FEE60702720D8F23699C9F /* hpscan.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = hpscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FEE60702720D8F23699C9F /* hpscan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hpscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2091E195F519D5E17700DB87 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		2A89E0100D2AA684B15BB760 /* HPScanKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HPScanKit; path = Packages/HPScanKit; sourceTree = SOURCE_ROOT; };
 		33277E92E46099E69E7B3B3B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -144,7 +144,6 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					58B3C2B6F8B802756DA42596 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -213,6 +212,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E9B65SZ35;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = hpscan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E9B65SZ35;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = hpscan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
